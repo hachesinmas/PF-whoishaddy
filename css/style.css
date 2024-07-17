@@ -40,7 +40,7 @@ li{
 
 header{
    height: 500px;
-   background: url(/assets/imagenes/el\ logo.jpg);
+   background: url(../assets/imagenes/el\ logo.jpg);
    background-position: center;
    background-size: cover;
    display: grid;
@@ -175,7 +175,7 @@ main {
 footer{
 
    height: 500px;
-   background: url(/assets/imagenes/el\ logo.jpg);
+   background: url(../assets/imagenes/el\ logo.jpg);
    background-position: center;
    background-size: cover;
    display: grid;
