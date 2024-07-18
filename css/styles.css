@@ -1,9 +1,4 @@
-/* Error: expected ":".
- *    ,
- * 11 |     $white;
- *    |           ^
- *    '
- *   scss\styles.scss 11:11  root stylesheet */
+
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
