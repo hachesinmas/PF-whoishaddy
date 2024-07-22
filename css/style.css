@@ -175,6 +175,9 @@ footer section {
   p, .titulo-pagina, .titulo-seccion, .titulo-proximos, .titulo-sesiones {
     font-size: 2rem;
   }
+  header {
+    height: 300px;
+  }
   header p, header .titulo-pagina, header .titulo-seccion, header .titulo-proximos, header .titulo-sesiones {
     font-size: 3rem;
   }
@@ -183,6 +186,9 @@ footer section {
   }
   .navegador {
     font-size: 1.5rem;
+  }
+  footer {
+    height: 300px;
   }
   .instagram, .instagram img, .spotify img, .youtube img, .soundcloud img {
     width: 60px;
