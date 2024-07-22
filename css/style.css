@@ -155,11 +155,6 @@ footer section {
   .canciones {
     grid-template-columns: 1fr;
   }
-  .navegador {
-    flex-direction: column;
-    align-items: left;
-    background-color: rgba(81, 88, 187, 0.5607843137);
-  }
   .proximos-eventos {
     grid-template-columns: 1fr;
   }
@@ -186,6 +181,9 @@ footer section {
   }
   .navegador {
     font-size: 1.5rem;
+    flex-direction: column;
+    align-items: left;
+    background-color: rgba(81, 88, 187, 0.2470588235);
   }
   footer {
     height: 300px;

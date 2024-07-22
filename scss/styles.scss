@@ -210,11 +210,7 @@
            grid-template-columns: 1fr;
        }
    
-       .navegador {
-           flex-direction: column;
-           align-items: left;
-           background-color: $purple;
-       }
+       
    
        
        .proximos-eventos{
@@ -243,10 +239,15 @@
        a {
            font-size: 1.5rem;
        }
-   
        .navegador {
-           font-size: 1.5rem;
-       }
+         font-size: 1.5rem;
+         flex-direction: column;
+         align-items: left;
+         background-color: $purple2;
+     }
+       
+           
+      
        
        footer{
          height: 300px;
