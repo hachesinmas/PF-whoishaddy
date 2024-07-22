@@ -163,6 +163,11 @@ footer section {
   grid-area: 5/1/6/4;
 }
 
+.instagram, .soundcloud img, .youtube img, .spotify img, .instagram img {
+  width: 150px;
+  height: 150px;
+}
+
 @media (max-width: 768px) {
   .canciones {
     grid-template-columns: 1fr;
@@ -178,6 +183,10 @@ footer section {
   .media {
     grid-template-columns: 1fr;
   }
+  .instagram, .instagram img, .spotify img, .youtube img, .soundcloud img {
+    width: 85px;
+    height: 85px;
+  }
 }
 @media (max-width: 480px) {
   p {
@@ -191,6 +200,10 @@ footer section {
   }
   .navegador {
     font-size: 1.5rem;
+  }
+  .instagram, .instagram img, .spotify img, .youtube img, .soundcloud img {
+    width: 60px;
+    height: 60px;
   }
 }
 

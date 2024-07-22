@@ -193,7 +193,26 @@
        margin: 0 auto;
        grid-area: 5 / 1 / 6 / 4;
      }
-     
+     .instagram{
+      width: 150px; 
+      height: 150px;
+     }
+     .instagram img{
+      @extend .instagram;
+     }
+     .spotify img{
+      @extend .instagram;
+     }
+    
+
+     .youtube img{
+      @extend .instagram;
+     }
+     .soundcloud img{
+      @extend .instagram;
+     }
+
+
      @media (max-width: 768px) {
  
    
@@ -213,7 +232,11 @@
        }
        .media{
           grid-template-columns: 1fr;
-   } }
+   }
+   .instagram {
+      width: 85px;
+      height: 85px;
+}}
    
    @media (max-width: 480px) {
        p {
@@ -231,4 +254,9 @@
        .navegador {
            font-size: 1.5rem;
        }
+       .instagram{
+         width: 60px;
+         height: 60px;
+   }
+   
    }
