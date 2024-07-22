@@ -141,9 +141,12 @@
  }
  .fiesta-1{
     margin: 0 auto;
-     background-color: $purple;
+     background-color: $purple;     
  }
- 
+ .fiesta-1 img{
+   width: 300px;
+   height: 500px;
+ }
  .fiesta-2{
     @extend .fiesta-1;
  }

@@ -1,254 +1,197 @@
- *{
-   margin: 0;
-   padding: 0;
-
- }
-
- p {
-   color: white;
-   height: auto;
-   background-color: black;
-   width: auto;
-   font-family: "libre barcode 128 text";
-   text-align: center;
-   font-size: 3rem;
-   flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Libre Barcode 128 Text", sans-serif;
+  color: white;
+  background-color: white;
+}
 
+p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.582);
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-ul{
-   list-style-type: none;
-   }
+ul {
+  list-style-type: none;
+}
+
 a {
-   font-size: 2rem;
-
+  font-size: 2rem;
 }
 
-
-li{
-   padding: 20px ;
-   display: inline-block;
-   
+li {
+  padding: 20px;
+  display: inline-block;
 }
 
-header{
-   background: none;
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: center;
+header {
+  height: 500px;
+  background: url(../assets/imagenes/el\ logo.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-   }
-.logotop{
-   display: flex;   
-   flex-wrap: wrap;  
-   justify-content: space-around;
-}  
 header p {
-   display: flex;
-   flex-flow: column wrap;
-   color: white;
-   height: auto;
-   background-color: black;
-   width: auto;
-   font-family: "libre barcode 128 text";
-   font-size: 4rem;
-}
-.navegador-container{
-   display: flex;
-   justify-content: space-around;
-
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.582);
+  width: auto;
+  font-family: "Libre Barcode 128 Text", sans-serif;
+  font-size: 4rem;
 }
 
-.navegador{
-   background-color: #5158BB;
-   width: 100%;
-   font-size: 2rem;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   
-}
-.navegador a{
-   text-decoration: none;
-   color: white;
-   font-family: "libre barcode 128 text";
-   
-}
-.navegador a:hover{
-   color: black;
-   text-decoration: none;
-
+.navegador {
+  background-color: rgba(81, 88, 187, 0.5607843137);
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: bottom;
+  justify-content: space-around;
+  grid-area: 5/1/6/4;
 }
 
-main{
-   display: flex;
-   flex-wrap: wrap;
-   display: grid;
-   background-color: #5158BB;
-   justify-content: center;
-}
-.canciones{
-
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(4, 1fr);
-   grid-column-gap: 100px;
-   grid-row-gap: 100px;
-   border: 3px solid black;
-
+.navegador a {
+  text-decoration: none;
+  color: white;
+  font-family: "Libre Barcode 128 Text", sans-serif;
 }
 
-
-.titulo-seccion{
-   display: flex;
-   flex-wrap: wrap;
-   background-color: #0d0d0e;
-   justify-content: center;
-   
-
+.navegador a:hover {
+  color: black;
+  text-decoration: none;
 }
 
-.cancion1{
-   display: flex;
-   justify-content: center;
-   grid-area: 1 / 1 / 3 / 3;
-
-}
-.cancion2{
-   display: flex;
-   justify-content: center;
-   grid-area: 1 / 3 / 3 / 5;
-}
-.cancion3{
-   display: flex;
-   justify-content: center;
-   grid-area: 3 / 1 / 5 / 3;
-}
-.cancion4{
-   display: flex;
-   justify-content: center;
-   grid-area: 3 / 3 / 5 / 5;
-
-}
-.proximos-eventos{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(4, 1fr);
-   grid-column-gap: 100px;
-   grid-row-gap: 100px; 
-
-   border: 3px solid black;
-   
+main {
+  background-color: rgba(81, 88, 187, 0.5607843137);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-   
-
-.titulo-proximos{
-
-   justify-content: center;
-   background-color: #0d0d0e;
-   
-
- 
-}
-.fiesta-1{
-   grid-area: 1 / 1 / 3 / 3;;
-
-   background-color: #5158BB;
-
-}
-.fiesta-2{
-   grid-area: 1 / 3 / 3 / 5;
-   background-color: #5158BB;
-
-
-}
-.fiesta-3{
-   grid-area: 3 / 1 / 5 / 3;
-   background-color: #5158BB;
-
-}
-.fiesta-4{
-   grid-area: 3 / 3 / 5 / 5;
-   background-color: #5158BB;
-
+.canciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
 }
 
+.titulo-seccion, .titulo-sesiones, .titulo-proximos {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 1rem;
+}
 
-footer{
-   display: grid;
-   grid-template-rows: repeat(3, auto);
-   grid-template-columns: 1,auto;
-   background-color:white;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   flex-direction: column;
-    }
-    footer section{
-   display: flex;   
-   flex-wrap: wrap;  
-   justify-content: space-around;
-    }
-    footer p{
+.cancion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 1rem;
+}
 
-      justify-content: center;
-      background-color: #0d0d0e;
-   
-   
-    }
-    footer nav{
-   display: flex;
-   flex-wrap: wrap;  
-   justify-content: space-around;
-    }
-/*tablet*/
-   @media (max-widht: 768px){
-      .canciones{
+.titulo-cancion {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 1rem;
+}
 
-         
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(5, 1fr);
-         grid-column-gap: 50px;
-         grid-row-gap: 50px;
-         border: 3px solid black;
-      
-      }
+.proximos-eventos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
 
-      
-         
-      .titulo-seccion { grid-area: 1 / 1 / 2 / 3; }
-      .cancion1 { grid-area: 2 / 1 / 4 / 2; }
-      .cancion2{ grid-area: 2 / 2 / 4 / 3; }
-      .cancion3 { grid-area: 4 / 1 / 6 / 2; }
-      .cancion4 { grid-area: 4 / 2 / 6 / 3; }
-     
-      .proximos-eventos{
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(2, 1fr);
-         grid-column-gap: 50px;
-         grid-row-gap: 50px; 
-      
-         border: 3px solid black;}
-         
+.fiesta-1, .fiesta-4, .fiesta-3, .fiesta-2 {
+  margin: 0 auto;
+  background-color: rgba(81, 88, 187, 0.5607843137);
+}
 
-      
-    
+.fiesta-1 img, .fiesta-4 img, .fiesta-3 img, .fiesta-2 img {
+  width: 300px;
+  height: 500px;
+}
 
+.media {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-      
+footer {
+  height: 500px;
+  background: url(../assets/imagenes/el\ logo.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-   }
-  
-/*mobile*/
-   @media (max-width: 320px){
+footer section {
+  justify-content: space-around;
+}
 
-   }
+.parrafo-footer {
+  background-color: rgba(0, 0, 0, 0.582);
+  justify-content: center;
+  grid-area: 1/1/2/2;
+}
+
+.redes-sociales {
+  margin: 0 auto;
+  grid-area: 5/1/6/4;
+}
+
+@media (max-width: 768px) {
+  .canciones {
+    grid-template-columns: 1fr;
+  }
+  .navegador {
+    flex-direction: column;
+    align-items: left;
+    background-color: rgba(81, 88, 187, 0.5607843137);
+  }
+  .proximos-eventos {
+    grid-template-columns: 1fr;
+  }
+  .media {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 3rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  .navegador {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
