@@ -55,15 +55,8 @@
  
     }
  
- header p {
-    display: flex;
-    flex-flow: column wrap;
-    color: $white;
-    height: auto;
-    background-color: $black;
-    width: auto;
-    font-family: $barcode;
-    font-size: 4rem;
+ .titulo-pagina{
+@extend p 
  }
  
  
@@ -108,9 +101,7 @@
  
  
  .titulo-seccion{
-    text-align: center;
-    background-color: $black;
-    padding: 1rem;
+   @extend p 
  
  }
  .cancion {
@@ -137,7 +128,7 @@
     
  
  .titulo-proximos{
-@extend .titulo-seccion;
+   @extend p 
  }
  .fiesta-1{
     margin: 0 auto;
@@ -158,12 +149,11 @@
  }
  
  .media{
-    display: grid;
-     grid-template-columns: 1fr;
- 
- }
+   display: grid;
+   grid-template-columns: 1fr;
+ } 
  .titulo-sesiones{
-    @extend .titulo-seccion;
+   @extend p 
  }
  
  footer{

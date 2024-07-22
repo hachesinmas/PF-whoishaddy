@@ -10,7 +10,7 @@ body {
   background-color: white;
 }
 
-p {
+p, .titulo-sesiones, .titulo-proximos, .titulo-seccion, .titulo-pagina {
   color: white;
   background-color: rgba(0, 0, 0, 0.582);
   text-align: center;
@@ -44,17 +44,6 @@ header {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-}
-
-header p {
-  display: flex;
-  flex-flow: column wrap;
-  color: white;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.582);
-  width: auto;
-  font-family: "Libre Barcode 128 Text", sans-serif;
-  font-size: 4rem;
 }
 
 .navegador {
@@ -92,12 +81,6 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   width: 100%;
-}
-
-.titulo-seccion, .titulo-sesiones, .titulo-proximos {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.582);
-  padding: 1rem;
 }
 
 .cancion {
@@ -189,10 +172,10 @@ footer section {
   }
 }
 @media (max-width: 480px) {
-  p {
+  p, .titulo-pagina, .titulo-seccion, .titulo-proximos, .titulo-sesiones {
     font-size: 2rem;
   }
-  header p {
+  header p, header .titulo-pagina, header .titulo-seccion, header .titulo-proximos, header .titulo-sesiones {
     font-size: 3rem;
   }
   a {
