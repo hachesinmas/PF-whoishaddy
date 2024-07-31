@@ -13,6 +13,7 @@ body {
 p, .titulo-sesiones, .titulo-proximos, .titulo-seccion, .titulo-pagina {
   color: white;
   background-color: rgba(0, 0, 0, 0.582);
+  font-family: "Libre Barcode 128 Text", sans-serif;
   text-align: center;
   font-size: 3rem;
   display: flex;

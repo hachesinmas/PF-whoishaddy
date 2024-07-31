@@ -1,4 +1,4 @@
-@import'./variables.scss';
+@import'./_variables.scss';
 
 * {
     margin: 0;
@@ -16,6 +16,7 @@
   p {
     color: $white;
     background-color: $black;
+    font-family: $barcode;
     text-align: center;
     font-size: 3rem;
     display: flex;
