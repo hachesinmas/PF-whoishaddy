@@ -147,8 +147,10 @@ footer section {
 }
 
 .redes-sociales {
+  width: 100%;
   margin: 0 auto;
   grid-area: 5/1/6/4;
+  background-color: rgba(81, 88, 187, 0.5607843137);
 }
 
 .instagram, .soundcloud img, .youtube img, .spotify img, .instagram img {

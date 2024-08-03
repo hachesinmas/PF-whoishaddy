@@ -186,8 +186,10 @@
     
      }
      .redes-sociales{
+      width: 100%;
        margin: 0 auto;
        grid-area: 5 / 1 / 6 / 4;
+       background-color: $purple;
      }
      .instagram{
       width: 150px; 
