@@ -58,6 +58,10 @@ header {
   grid-area: 5/1/6/4;
 }
 
+nav.navegador {
+  height: 100px;
+}
+
 .navegador a {
   text-decoration: none;
   color: white;
@@ -185,6 +189,9 @@ footer section {
     flex-direction: column;
     align-items: left;
     background-color: rgba(81, 88, 187, 0.5607843137);
+  }
+  nav.navegador {
+    height: 350px;
   }
   footer {
     height: 300px;
